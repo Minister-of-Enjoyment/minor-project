@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.mainComponentContainer {
+  width: 80%;
+  height: auto;
+  margin: 6rem auto;
+  /* background: #f8f8f8; */
+  padding: 0 4rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.listContainer {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.leftListContainer {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+.imageContainer {
+  width: 72px;
+  height: 72px;
+}
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border: 1.5px solid #d7d7d7;
+  transform: scaleX(1);
+}
+.leftTextContainer {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.rightListContainer {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.flyInMenu {
+  width: fit-content;
+  height: auto;
+  padding: 0.8rem 0;
+  border: 1px solid #f2f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background: #fdfdfd;
+  row-gap: 1rem;
+  position: absolute;
+  /* inset: 4rem 0 0 8rem; */
+  top: 3rem;
+  left: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(40, 40, 40, 0.1);
+  visibility: hidden;
+}
+.flyInMenuNew {
+  width: fit-content;
+  height: auto;
+  padding: 0.8rem 0;
+  border: 1px solid #f2f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background: #fdfdfd;
+  row-gap: 1rem;
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(40, 40, 40, 0.1);
+  visibility: visible;
+  z-index: 10000;
+  transition: all ease-in 0.3s;
+}
+.flyInMenuNew a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.flyInMenuNew a:hover {
+  background-color: aliceblue;
+}
+.viewProfile {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+}
+.message {
+  width: fit-content;
+  padding: 0.3rem 2.3rem 0.3rem 0.5rem;
+}
+.viewProfile p,
+.message p {
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+.iconContainer i {
+  cursor: pointer;
+}
+
+@media all and (max-width: 840px) {
+  .rightTextContainer {
+    display: none;
+  }
+}
+@media all and (max-width: 555px) {
+  .mainComponentContainer {
+    width: 95%;
+    padding: 0 2rem;
+  }
+}
