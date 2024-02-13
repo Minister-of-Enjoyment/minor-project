@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: lightsteelblue;
+  position: relative;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+body::after {
+  background-color: lightcyan;
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 40%;
+  z-index: -1;
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 30% 100%, 0 50%);
+}
+
+#my_form {
+  max-width: 450px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  margin-inline: auto;
+  margin-top: 10%;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+#my_form > * {
+  margin-bottom: 1rem;
+}
+.form_title {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+.form_title h1 {
+  font-size: 1rem;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.2rem;
+}
+label {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+input {
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(141, 132, 132);
+  outline: none;
+}
+
+button {
+  font-size: 0.8rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+p {
+  color: red;
+  font-size: 0.6rem;
+  margin-top: 0;
+  margin-left: 0.5rem;
+}
