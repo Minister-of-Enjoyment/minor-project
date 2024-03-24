@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-decoration: none;
+}
+.firstSection {
+  width: 90%;
+  height: auto;
+  background-color: #f8f8f8;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+.topTextBox {
+  width: fit-content;
+  height: auto;
+}
+.topTextBox h1 {
+  font-size: 1.5rem;
+  color: #23123d;
+}
+.createButtonBox {
+  width: fit-content;
+  height: auto;
+}
+.createButtonBox button {
+  background-color: #4c48f8;
+  color: #f8f8f8;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Second section styles for items */
+.resourceSection {
+  width: 90%;
+  height: auto;
+  background-color: #f8f8f8;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1rem;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.resource {
+  width: 30%;
+  height: auto;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 0.5rem;
+}
+.nameAndIcon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nameAndIcon a {
+  color: #171031;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.nameAndIcon i {
+  color: #8f8f95;
+  cursor: pointer;
+}
+.descriptionContainer {
+  width: 100%;
+  height: auto;
+}
+.descriptionContainer p {
+  font-size: 0.9rem;
+  color: #8f8f95;
+}
+
+/* modal design */
+.modalContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.modalContainerVisible {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+.modal {
+  width: 30%;
+  height: auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.closeIconBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.modalTitleBox {
+  width: 100%;
+  height: auto;
+  padding: 0.5 0;
+}
+.modalTitleBox h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #171031;
+}
+.formContainer {
+  width: 100%;
+  height: auto;
+}
+form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 1rem;
+}
+.inputGroup {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+label {
+  font-size: 0.9rem;
+  color: #23123d;
+}
+input,
+textarea {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  border: 1px solid #e3e3e3;
+  font-size: 0.85rem;
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #4c48f8;
+  outline: none;
+}
+.form-button {
+  width: 100%;
+  height: auto;
+  background-color: #4c48f8;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  color: #f8f8f8;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.form-button:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #4643e7;
+}
+
+/* Media queries */

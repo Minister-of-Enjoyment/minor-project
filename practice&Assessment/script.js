@@ -1547,9 +1547,63 @@
 // }
 
 // ===========● Iterate over the values of an object using for...of=============
-const myObject = { a: 1, b: 2, c: 3, d: 4 };
-const valueArray = Object.values(myObject);
+// const myObject = { a: 1, b: 2, c: 3, d: 4 };
+// const valueArray = Object.values(myObject);
 
-for (const value of valueArray) {
-  console.log(value);
-}
+// for (const value of valueArray) {
+//   console.log(value);
+// }
+
+// for (i = 1; i <= 20; i++) {
+//   if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else if (i % 15 === 0) {
+//     console.log("FizzBuzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// const button = document.getElementById("button");
+// button.addEventListener("click", investmentCalc);
+
+// function investmentCalc() {
+//   let investment = Number(prompt("Enter your investment Amount here ($)"));
+//   let profit = (investment * 10) / 100;
+//   let totalProfit = investment + profit;
+//   let Vat = (totalProfit * 2) / 100;
+//   let profitAfterVAt = totalProfit - Vat;
+//   console.log(
+//     `Your investment amount is $${investment} and profit on investment is $${profit} and total profit before VAT is $${totalProfit} and VAT is $${Vat}. Your profit after VAT is $${profitAfterVAt}`
+//   );
+// }
+
+let myName = "Philip";
+const yourLastName = "sarah";
+var hisName = "Neli";
+
+let myNumber = 12;
+let number1 = 4;
+let check = false;
+
+const squareBracket = [1, 2, 4, 5];
+
+console.log(typeof squareBracket);
+
+// Matimatics or Arithmetic Operators
+addition = "+";
+subttraction = "-";
+multiply = "*";
+division = "/";
+raiseToPower = "**";
+modulus = "%";
+
+// Assignment operators
+equal = "=";
+
+// increament operators/Decreament operator
+let cartNumber = 5;
+cartNumber--;
+console.log(cartNumber);
